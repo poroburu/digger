@@ -32,10 +32,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 -- addon information
 
-_addon.name = 'digger'
-_addon.version = '2.2.0'
-_addon.command = 'digger'
-_addon.author = 'Seth VanHeulen (Acacia@Odin)'
+addon.name = 'digger'
+addon.version = '4.2.0'
+addon.author = 'Poroburu (maintainer)'
+addon.desc      = '/dig';
+addon.link      = 'https://github.com/poroburu/digger';
+
 
 -- modules
 
@@ -221,6 +223,6 @@ end
 
 -- register event callbacks
 
-windower.register_event('zone change', check_zone_change)
-windower.register_event('incoming chunk', check_incoming_chunk)
-windower.register_event('addon command', digger_command)
+--windower.register_event('zone change', check_zone_change)
+--windower.register_event('incoming chunk', check_incoming_chunk)
+--windower.register_event('addon command', digger_command)
